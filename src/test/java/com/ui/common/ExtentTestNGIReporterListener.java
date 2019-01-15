@@ -161,8 +161,10 @@ public class ExtentTestNGIReporterListener implements IReporter {
                 Object[] objects = Reporter.getOutput(result).toArray();
                 String name="";
                 //如果有参数，则使用参数的toString组合代替报告中的name
-                if (! objects[0].equals("")){
-                    name = (String) objects[0];
+                if (object oj: objects){
+                    if(! oj.equal(""){
+                        name = oj
+                    }
                 }
                 if(name.length()>0){
                     if(name.length()>50){
