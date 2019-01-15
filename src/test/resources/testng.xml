@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="ui测试">
+    <test name="百度搜索测试结果">
+        <classes>
+            <class name="com.ui.testCase.TestHome">
+                <methods>
+                    <include name="test1" description="搜索测试"/>
+                </methods>
+            </class>
+
+        </classes>
+    </test>
+    <listeners>
+        <listener class-name="com.ui.common.ExtentTestNGIReporterListener"/>
+    </listeners>
+</suite>
